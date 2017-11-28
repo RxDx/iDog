@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52C13E96797E4BBF38F5704C /* Pods_iDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BABAFC6C471C8F0AD42A07A /* Pods_iDog.framework */; };
 		5BED3EDE1FCE175F00E7CD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */; };
 		5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */; };
 		5BED3EE31FCE175F00E7CD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED3EE11FCE175F00E7CD17 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BABAFC6C471C8F0AD42A07A /* Pods_iDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BED3EDA1FCE175F00E7CD17 /* iDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5BED3EE41FCE175F00E7CD17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BED3EE71FCE175F00E7CD17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BED3EE91FCE175F00E7CD17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		709F1EE55EF0818EC74C9DA8 /* Pods-iDog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDog.release.xcconfig"; path = "Pods/Target Support Files/Pods-iDog/Pods-iDog.release.xcconfig"; sourceTree = "<group>"; };
+		FE877C4E000DC85D3F88F1BA /* Pods-iDog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iDog.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iDog/Pods-iDog.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C13E96797E4BBF38F5704C /* Pods_iDog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233F6CB5897E4E4BC7BE135C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE877C4E000DC85D3F88F1BA /* Pods-iDog.debug.xcconfig */,
+				709F1EE55EF0818EC74C9DA8 /* Pods-iDog.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5BED3ED11FCE175F00E7CD17 = {
 			isa = PBXGroup;
 			children = (
 				5BED3EDC1FCE175F00E7CD17 /* iDog */,
 				5BED3EDB1FCE175F00E7CD17 /* Products */,
+				233F6CB5897E4E4BC7BE135C /* Pods */,
+				D0F9DB5154345CB792D94E63 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = iDog;
 			sourceTree = "<group>";
 		};
+		D0F9DB5154345CB792D94E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BABAFC6C471C8F0AD42A07A /* Pods_iDog.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BED3EEC1FCE175F00E7CD17 /* Build configuration list for PBXNativeTarget "iDog" */;
 			buildPhases = (
+				6C67095B7EF98E03921C60D0 /* [CP] Check Pods Manifest.lock */,
 				5BED3ED61FCE175F00E7CD17 /* Sources */,
 				5BED3ED71FCE175F00E7CD17 /* Frameworks */,
 				5BED3ED81FCE175F00E7CD17 /* Resources */,
+				19D0AF9A8A356DA19788E210 /* [CP] Embed Pods Frameworks */,
+				5AE3EC03C5834A028F687351 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19D0AF9A8A356DA19788E210 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDog/Pods-iDog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AE3EC03C5834A028F687351 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iDog/Pods-iDog-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C67095B7EF98E03921C60D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iDog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BED3ED61FCE175F00E7CD17 /* Sources */ = {
@@ -272,6 +350,7 @@
 		};
 		5BED3EED1FCE175F00E7CD17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE877C4E000DC85D3F88F1BA /* Pods-iDog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +366,7 @@
 		};
 		5BED3EEE1FCE175F00E7CD17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 709F1EE55EF0818EC74C9DA8 /* Pods-iDog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
