@@ -25,6 +25,11 @@ class BreedsListController: UIViewController {
         viewModel?.getBreeds()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUI()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -45,6 +50,7 @@ class BreedsListController: UIViewController {
 
 }
 
+// MARK: - ViewModelDelegate
 extension BreedsListController: BreedListViewModelDelegate {
     
     func updateUI() {

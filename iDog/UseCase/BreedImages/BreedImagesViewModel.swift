@@ -38,4 +38,11 @@ class BreedImagesViewModel {
             self.delegate?.updateUI()
         }
     }
+    
+    func favoriteBreed() {
+        breed?.isFavorite == true
+            ? breed?.removeFavorite()
+            : breed?.addFavorite()
+        delegate?.updateUI()
+    }
 }

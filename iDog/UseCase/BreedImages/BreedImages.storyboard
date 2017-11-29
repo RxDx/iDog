@@ -87,6 +87,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="8th-5U-hVk" id="qUK-KL-aU3"/>
+                        <outlet property="favoriteButton" destination="JCe-wW-fzC" id="nt3-PN-T7r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R65-OI-F4b" userLabel="First Responder" sceneMemberID="firstResponder"/>

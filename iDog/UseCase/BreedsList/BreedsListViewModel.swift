@@ -26,6 +26,8 @@ class BreedsListViewModel {
     
     // MARK: - Repository
     func getBreeds() {
+        self.breedsHash = [String: [Breed]]()
+        delegate?.updateUI()
         delegate?.showLoading()
         BreedsRepository().all { (response) in
             self.delegate?.hideLoading()
@@ -72,6 +74,9 @@ class BreedsListViewModel {
     
     func breedFor(section: Int, row: Int) -> Breed? {
         let keys = Array(breedsHash.keys).sorted()
+        if keys.isEmpty {
+            return nil
+        }
         return breedsHash[keys[section]]?[row]
     }
 }

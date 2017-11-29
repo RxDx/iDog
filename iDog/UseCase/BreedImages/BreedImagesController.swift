@@ -10,6 +10,7 @@ import UIKit
 
 class BreedImagesController: UIViewController {
    
+    @IBOutlet weak var favoriteButton: UIBarButtonItem!
     @IBOutlet weak var collectionView: UICollectionView!
     
     var viewModel: BreedImagesViewModel?
@@ -17,7 +18,9 @@ class BreedImagesController: UIViewController {
     // MARK: - State
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        updateUI()
+        
         viewModel?.getBreedImages()
     }
 
@@ -28,6 +31,7 @@ class BreedImagesController: UIViewController {
     
     // MARK: - Actions
     @IBAction func clickOnFavoriteButton(_ sender: Any) {
+        viewModel?.favoriteBreed()
     }
     
     // MARK: - Storyboard
@@ -42,14 +46,17 @@ class BreedImagesController: UIViewController {
     
 }
 
-// ViewModelDelegate
+// MARK: - ViewModelDelegate
 extension BreedImagesController: BreedImagesViewModelDelegate {
     func updateUI() {
+        favoriteButton.setBackgroundImage(UIImage(named:
+            viewModel?.breed?.isFavorite == true ? "trash" : "star"),
+                                          for: .normal, barMetrics: .default)
         collectionView.reloadData()
     }
 }
 
-// CollectionView
+// MARK: - CollectionView
 extension BreedImagesController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

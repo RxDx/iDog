@@ -59,16 +59,24 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lS4-Ia-qFI">
-                                                    <rect key="frame" x="89" y="19.5" width="251" height="20.5"/>
+                                                    <rect key="frame" x="89" y="19.5" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="39q-3P-nzJ">
+                                                    <rect key="frame" x="136" y="15" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="Oir-eU-qhK"/>
+                                                        <constraint firstAttribute="height" constant="20" id="lgM-2B-g9P"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Xbh-Ls-682" firstAttribute="centerY" secondItem="gi8-Do-w59" secondAttribute="centerY" id="3ad-lH-7TL"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="lS4-Ia-qFI" secondAttribute="trailing" constant="20" id="7ed-mU-kPX"/>
+                                                <constraint firstItem="39q-3P-nzJ" firstAttribute="centerY" secondItem="lS4-Ia-qFI" secondAttribute="centerY" constant="-5" id="R50-o6-w5Y"/>
                                                 <constraint firstItem="Xbh-Ls-682" firstAttribute="leading" secondItem="gi8-Do-w59" secondAttribute="leadingMargin" constant="20" id="Tbq-s5-JZc"/>
+                                                <constraint firstItem="39q-3P-nzJ" firstAttribute="leading" secondItem="lS4-Ia-qFI" secondAttribute="trailing" constant="5" id="WsF-Bq-6Rm"/>
                                                 <constraint firstItem="lS4-Ia-qFI" firstAttribute="leading" secondItem="Xbh-Ls-682" secondAttribute="trailing" constant="24" id="gHd-Th-CdB"/>
                                                 <constraint firstItem="lS4-Ia-qFI" firstAttribute="centerY" secondItem="Xbh-Ls-682" secondAttribute="centerY" id="gOk-r6-dZ3"/>
                                             </constraints>
@@ -76,6 +84,7 @@
                                         <connections>
                                             <outlet property="breedImageView" destination="Xbh-Ls-682" id="Ete-Zh-FZR"/>
                                             <outlet property="breedLabel" destination="lS4-Ia-qFI" id="VRw-sT-G73"/>
+                                            <outlet property="heartImageView" destination="39q-3P-nzJ" id="2L3-FF-e4V"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -106,4 +115,7 @@
             <point key="canvasLocation" x="216.80000000000001" y="144.3778110944528"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="heart" width="128" height="128"/>
+    </resources>
 </document>

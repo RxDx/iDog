@@ -12,6 +12,7 @@ class BreedCell: UITableViewCell {
 
     @IBOutlet weak var breedImageView: UIImageView!
     @IBOutlet weak var breedLabel: UILabel!
+    @IBOutlet weak var heartImageView: UIImageView!
     
     var breed: Breed? {
         didSet {
@@ -33,5 +34,8 @@ class BreedCell: UITableViewCell {
     func updateUI() {
         breedImageView.image = UIImage(named: "dog")
         breedLabel.text = breed?.name
+        
+        heartImageView.tintColor = .red
+        heartImageView.isHidden = breed?.isFavorite != true
     }
 }
