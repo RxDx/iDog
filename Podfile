@@ -6,5 +6,10 @@ target 'iDog' do
   use_frameworks!
 
   # Pods for iDog
+  pod 'Alamofire', '~> 4.4'
+  pod 'SwiftyJSON'
+  pod 'MBProgressHUD', '~> 1.0.0'
+  pod 'Kingfisher'
+  pod 'RealmSwift'
 
 end

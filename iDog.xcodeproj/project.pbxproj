@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		52C13E96797E4BBF38F5704C /* Pods_iDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BABAFC6C471C8F0AD42A07A /* Pods_iDog.framework */; };
+		5B8DAA011FCE1AE50003E4E8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DA9FE1FCE1AE40003E4E8 /* UIViewControllerExtension.swift */; };
+		5B8DAA021FCE1AE50003E4E8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DA9FF1FCE1AE40003E4E8 /* UIImageViewExtension.swift */; };
+		5B8DAA031FCE1AE50003E4E8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA001FCE1AE40003E4E8 /* UIViewExtension.swift */; };
+		5B8DAA0D1FCE1C820003E4E8 /* BreedListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA0C1FCE1C820003E4E8 /* BreedListController.swift */; };
+		5B8DAA0F1FCE1C990003E4E8 /* BreedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA0E1FCE1C990003E4E8 /* BreedListViewModel.swift */; };
+		5B8DAA131FCE1CB40003E4E8 /* BreedList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8DAA121FCE1CB40003E4E8 /* BreedList.storyboard */; };
+		5B8DAA151FCE1CF90003E4E8 /* BreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA141FCE1CF90003E4E8 /* BreedCell.swift */; };
+		5B8DAA171FCE1D3F0003E4E8 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA161FCE1D3F0003E4E8 /* Breed.swift */; };
+		5B8DAA191FCE1E160003E4E8 /* BreedsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA181FCE1E160003E4E8 /* BreedsRepository.swift */; };
+		5B8DAA1B1FCE213F0003E4E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */; };
+		5BAA8B381FCE19E90031CF5E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA8B371FCE19E90031CF5E /* BaseRepository.swift */; };
 		5BED3EDE1FCE175F00E7CD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */; };
 		5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */; };
 		5BED3EE31FCE175F00E7CD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED3EE11FCE175F00E7CD17 /* Main.storyboard */; };
@@ -17,6 +28,17 @@
 
 /* Begin PBXFileReference section */
 		4BABAFC6C471C8F0AD42A07A /* Pods_iDog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iDog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8DA9FE1FCE1AE40003E4E8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		5B8DA9FF1FCE1AE40003E4E8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		5B8DAA001FCE1AE40003E4E8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5B8DAA0C1FCE1C820003E4E8 /* BreedListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListController.swift; sourceTree = "<group>"; };
+		5B8DAA0E1FCE1C990003E4E8 /* BreedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewModel.swift; sourceTree = "<group>"; };
+		5B8DAA121FCE1CB40003E4E8 /* BreedList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BreedList.storyboard; sourceTree = "<group>"; };
+		5B8DAA141FCE1CF90003E4E8 /* BreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCell.swift; sourceTree = "<group>"; };
+		5B8DAA161FCE1D3F0003E4E8 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
+		5B8DAA181FCE1E160003E4E8 /* BreedsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRepository.swift; sourceTree = "<group>"; };
+		5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5BAA8B371FCE19E90031CF5E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		5BED3EDA1FCE175F00E7CD17 /* iDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +71,73 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B8DAA041FCE1AEC0003E4E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DA9FF1FCE1AE40003E4E8 /* UIImageViewExtension.swift */,
+				5B8DA9FE1FCE1AE40003E4E8 /* UIViewControllerExtension.swift */,
+				5B8DAA001FCE1AE40003E4E8 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B8DAA051FCE1B260003E4E8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5BED3EE41FCE175F00E7CD17 /* Assets.xcassets */,
+				5BED3EE91FCE175F00E7CD17 /* Info.plist */,
+				5BED3EE61FCE175F00E7CD17 /* LaunchScreen.storyboard */,
+				5BED3EE11FCE175F00E7CD17 /* Main.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5B8DAA061FCE1B5C0003E4E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DAA161FCE1D3F0003E4E8 /* Breed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5B8DAA071FCE1B760003E4E8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DAA091FCE1C0F0003E4E8 /* BreedList */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		5B8DAA081FCE1B850003E4E8 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DAA181FCE1E160003E4E8 /* BreedsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5B8DAA091FCE1C0F0003E4E8 /* BreedList */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DAA0C1FCE1C820003E4E8 /* BreedListController.swift */,
+				5B8DAA0E1FCE1C990003E4E8 /* BreedListViewModel.swift */,
+				5B8DAA141FCE1CF90003E4E8 /* BreedCell.swift */,
+				5B8DAA121FCE1CB40003E4E8 /* BreedList.storyboard */,
+			);
+			path = BreedList;
+			sourceTree = "<group>";
+		};
+		5BAA8B361FCE19930031CF5E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5B8DAA041FCE1AEC0003E4E8 /* Extensions */,
+				5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */,
+				5BAA8B371FCE19E90031CF5E /* BaseRepository.swift */,
+				5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		5BED3ED11FCE175F00E7CD17 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +159,12 @@
 		5BED3EDC1FCE175F00E7CD17 /* iDog */ = {
 			isa = PBXGroup;
 			children = (
-				5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */,
+				5BAA8B361FCE19930031CF5E /* Base */,
+				5B8DAA061FCE1B5C0003E4E8 /* Model */,
+				5B8DAA081FCE1B850003E4E8 /* Repository */,
+				5B8DAA051FCE1B260003E4E8 /* Resource */,
+				5B8DAA071FCE1B760003E4E8 /* UseCase */,
 				5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */,
-				5BED3EE11FCE175F00E7CD17 /* Main.storyboard */,
-				5BED3EE41FCE175F00E7CD17 /* Assets.xcassets */,
-				5BED3EE61FCE175F00E7CD17 /* LaunchScreen.storyboard */,
-				5BED3EE91FCE175F00E7CD17 /* Info.plist */,
 			);
 			path = iDog;
 			sourceTree = "<group>";
@@ -151,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BED3EE81FCE175F00E7CD17 /* LaunchScreen.storyboard in Resources */,
+				5B8DAA131FCE1CB40003E4E8 /* BreedList.storyboard in Resources */,
 				5BED3EE51FCE175F00E7CD17 /* Assets.xcassets in Resources */,
 				5BED3EE31FCE175F00E7CD17 /* Main.storyboard in Resources */,
 			);
@@ -165,9 +255,22 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-iDog/Pods-iDog-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -214,8 +317,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B8DAA151FCE1CF90003E4E8 /* BreedCell.swift in Sources */,
+				5B8DAA031FCE1AE50003E4E8 /* UIViewExtension.swift in Sources */,
+				5B8DAA021FCE1AE50003E4E8 /* UIImageViewExtension.swift in Sources */,
+				5B8DAA011FCE1AE50003E4E8 /* UIViewControllerExtension.swift in Sources */,
+				5BAA8B381FCE19E90031CF5E /* BaseRepository.swift in Sources */,
 				5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */,
+				5B8DAA0F1FCE1C990003E4E8 /* BreedListViewModel.swift in Sources */,
+				5B8DAA191FCE1E160003E4E8 /* BreedsRepository.swift in Sources */,
+				5B8DAA0D1FCE1C820003E4E8 /* BreedListController.swift in Sources */,
+				5B8DAA171FCE1D3F0003E4E8 /* Breed.swift in Sources */,
 				5BED3EDE1FCE175F00E7CD17 /* AppDelegate.swift in Sources */,
+				5B8DAA1B1FCE213F0003E4E8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQ2FN46XND;
-				INFOPLIST_FILE = iDog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iDog/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RxDx.iDog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WQ2FN46XND;
-				INFOPLIST_FILE = iDog/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iDog/Resource/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = RxDx.iDog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
