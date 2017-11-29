@@ -1,5 +1,5 @@
 //
-//  BreedListController.swift
+//  BreedsListController.swift
 //  iDog
 //
 //  Created by Rodrigo Dumont on 28/11/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class BreedListController: UIViewController {
+class BreedsListController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var viewModel: BreedListViewModel?
+    var viewModel: BreedsListViewModel?
     
     // MARK: - State
     override func viewDidLoad() {
@@ -21,7 +21,7 @@ class BreedListController: UIViewController {
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(refreshControlValueChanged), for: .valueChanged)
         
-        viewModel = BreedListViewModel(delegate: self)
+        viewModel = BreedsListViewModel(delegate: self)
         viewModel?.getBreeds()
     }
     
@@ -39,13 +39,13 @@ class BreedListController: UIViewController {
     
     // MARK: - Storyboard
     static func storyboardInstance() -> UINavigationController? {
-        let storyboard = UIStoryboard(name: "BreedList", bundle: nil)
+        let storyboard = UIStoryboard(name: "BreedsList", bundle: nil)
         return storyboard.instantiateInitialViewController() as? UINavigationController
     }
 
 }
 
-extension BreedListController: BreedListViewModelDelegate {
+extension BreedsListController: BreedListViewModelDelegate {
     
     func updateUI() {
         tableView.reloadData()
@@ -54,7 +54,7 @@ extension BreedListController: BreedListViewModelDelegate {
 }
 
 // MARK: - UITableView
-extension BreedListController: UITableViewDataSource {
+extension BreedsListController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return viewModel?.numberOfSections() ?? 0
     }
@@ -84,11 +84,11 @@ extension BreedListController: UITableViewDataSource {
     }
 }
 
-extension BreedListController: UITableViewDelegate {
+extension BreedsListController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let breed = viewModel?.breedFor(section: indexPath.section, row: indexPath.row),
-//            let controller = BreedDetailController.storyboardInstance(breed: breed) {
-//            navigationController?.pushViewController(controller, animated: true)
-//        }
+        if let breed = viewModel?.breedFor(section: indexPath.section, row: indexPath.row),
+            let controller = BreedImagesController.storyboardInstance(breed: breed) {
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }

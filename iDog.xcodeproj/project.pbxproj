@@ -11,14 +11,18 @@
 		5B8DAA011FCE1AE50003E4E8 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DA9FE1FCE1AE40003E4E8 /* UIViewControllerExtension.swift */; };
 		5B8DAA021FCE1AE50003E4E8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DA9FF1FCE1AE40003E4E8 /* UIImageViewExtension.swift */; };
 		5B8DAA031FCE1AE50003E4E8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA001FCE1AE40003E4E8 /* UIViewExtension.swift */; };
-		5B8DAA0D1FCE1C820003E4E8 /* BreedListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA0C1FCE1C820003E4E8 /* BreedListController.swift */; };
-		5B8DAA0F1FCE1C990003E4E8 /* BreedListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA0E1FCE1C990003E4E8 /* BreedListViewModel.swift */; };
-		5B8DAA131FCE1CB40003E4E8 /* BreedList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8DAA121FCE1CB40003E4E8 /* BreedList.storyboard */; };
+		5B8DAA0D1FCE1C820003E4E8 /* BreedsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA0C1FCE1C820003E4E8 /* BreedsListController.swift */; };
+		5B8DAA0F1FCE1C990003E4E8 /* BreedsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA0E1FCE1C990003E4E8 /* BreedsListViewModel.swift */; };
+		5B8DAA131FCE1CB40003E4E8 /* BreedsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8DAA121FCE1CB40003E4E8 /* BreedsList.storyboard */; };
 		5B8DAA151FCE1CF90003E4E8 /* BreedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA141FCE1CF90003E4E8 /* BreedCell.swift */; };
 		5B8DAA171FCE1D3F0003E4E8 /* Breed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA161FCE1D3F0003E4E8 /* Breed.swift */; };
 		5B8DAA191FCE1E160003E4E8 /* BreedsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA181FCE1E160003E4E8 /* BreedsRepository.swift */; };
 		5B8DAA1B1FCE213F0003E4E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */; };
 		5BAA8B381FCE19E90031CF5E /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAA8B371FCE19E90031CF5E /* BaseRepository.swift */; };
+		5BCDE8051FCE44AE00482412 /* BreedImages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BCDE8041FCE44AE00482412 /* BreedImages.storyboard */; };
+		5BCDE8071FCE44BC00482412 /* BreedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE8061FCE44BC00482412 /* BreedImageCell.swift */; };
+		5BCDE8091FCE44C900482412 /* BreedImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE8081FCE44C900482412 /* BreedImagesController.swift */; };
+		5BCDE80B1FCE44E800482412 /* BreedImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE80A1FCE44E800482412 /* BreedImagesViewModel.swift */; };
 		5BED3EDE1FCE175F00E7CD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */; };
 		5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */; };
 		5BED3EE31FCE175F00E7CD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED3EE11FCE175F00E7CD17 /* Main.storyboard */; };
@@ -31,14 +35,18 @@
 		5B8DA9FE1FCE1AE40003E4E8 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		5B8DA9FF1FCE1AE40003E4E8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 		5B8DAA001FCE1AE40003E4E8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		5B8DAA0C1FCE1C820003E4E8 /* BreedListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListController.swift; sourceTree = "<group>"; };
-		5B8DAA0E1FCE1C990003E4E8 /* BreedListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedListViewModel.swift; sourceTree = "<group>"; };
-		5B8DAA121FCE1CB40003E4E8 /* BreedList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BreedList.storyboard; sourceTree = "<group>"; };
+		5B8DAA0C1FCE1C820003E4E8 /* BreedsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListController.swift; sourceTree = "<group>"; };
+		5B8DAA0E1FCE1C990003E4E8 /* BreedsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsListViewModel.swift; sourceTree = "<group>"; };
+		5B8DAA121FCE1CB40003E4E8 /* BreedsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BreedsList.storyboard; sourceTree = "<group>"; };
 		5B8DAA141FCE1CF90003E4E8 /* BreedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedCell.swift; sourceTree = "<group>"; };
 		5B8DAA161FCE1D3F0003E4E8 /* Breed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breed.swift; sourceTree = "<group>"; };
 		5B8DAA181FCE1E160003E4E8 /* BreedsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsRepository.swift; sourceTree = "<group>"; };
 		5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5BAA8B371FCE19E90031CF5E /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		5BCDE8041FCE44AE00482412 /* BreedImages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BreedImages.storyboard; sourceTree = "<group>"; };
+		5BCDE8061FCE44BC00482412 /* BreedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageCell.swift; sourceTree = "<group>"; };
+		5BCDE8081FCE44C900482412 /* BreedImagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImagesController.swift; sourceTree = "<group>"; };
+		5BCDE80A1FCE44E800482412 /* BreedImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImagesViewModel.swift; sourceTree = "<group>"; };
 		5BED3EDA1FCE175F00E7CD17 /* iDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +111,8 @@
 		5B8DAA071FCE1B760003E4E8 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				5B8DAA091FCE1C0F0003E4E8 /* BreedList */,
+				5BCDE8031FCE449C00482412 /* BreedImages */,
+				5B8DAA091FCE1C0F0003E4E8 /* BreedsList */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -116,15 +125,15 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
-		5B8DAA091FCE1C0F0003E4E8 /* BreedList */ = {
+		5B8DAA091FCE1C0F0003E4E8 /* BreedsList */ = {
 			isa = PBXGroup;
 			children = (
-				5B8DAA0C1FCE1C820003E4E8 /* BreedListController.swift */,
-				5B8DAA0E1FCE1C990003E4E8 /* BreedListViewModel.swift */,
+				5B8DAA0C1FCE1C820003E4E8 /* BreedsListController.swift */,
+				5B8DAA0E1FCE1C990003E4E8 /* BreedsListViewModel.swift */,
 				5B8DAA141FCE1CF90003E4E8 /* BreedCell.swift */,
-				5B8DAA121FCE1CB40003E4E8 /* BreedList.storyboard */,
+				5B8DAA121FCE1CB40003E4E8 /* BreedsList.storyboard */,
 			);
-			path = BreedList;
+			path = BreedsList;
 			sourceTree = "<group>";
 		};
 		5BAA8B361FCE19930031CF5E /* Base */ = {
@@ -136,6 +145,17 @@
 				5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		5BCDE8031FCE449C00482412 /* BreedImages */ = {
+			isa = PBXGroup;
+			children = (
+				5BCDE8041FCE44AE00482412 /* BreedImages.storyboard */,
+				5BCDE8081FCE44C900482412 /* BreedImagesController.swift */,
+				5BCDE80A1FCE44E800482412 /* BreedImagesViewModel.swift */,
+				5BCDE8061FCE44BC00482412 /* BreedImageCell.swift */,
+			);
+			path = BreedImages;
 			sourceTree = "<group>";
 		};
 		5BED3ED11FCE175F00E7CD17 = {
@@ -240,8 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BED3EE81FCE175F00E7CD17 /* LaunchScreen.storyboard in Resources */,
-				5B8DAA131FCE1CB40003E4E8 /* BreedList.storyboard in Resources */,
+				5B8DAA131FCE1CB40003E4E8 /* BreedsList.storyboard in Resources */,
 				5BED3EE51FCE175F00E7CD17 /* Assets.xcassets in Resources */,
+				5BCDE8051FCE44AE00482412 /* BreedImages.storyboard in Resources */,
 				5BED3EE31FCE175F00E7CD17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,11 +342,14 @@
 				5B8DAA031FCE1AE50003E4E8 /* UIViewExtension.swift in Sources */,
 				5B8DAA021FCE1AE50003E4E8 /* UIImageViewExtension.swift in Sources */,
 				5B8DAA011FCE1AE50003E4E8 /* UIViewControllerExtension.swift in Sources */,
+				5BCDE8091FCE44C900482412 /* BreedImagesController.swift in Sources */,
 				5BAA8B381FCE19E90031CF5E /* BaseRepository.swift in Sources */,
 				5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */,
-				5B8DAA0F1FCE1C990003E4E8 /* BreedListViewModel.swift in Sources */,
+				5BCDE80B1FCE44E800482412 /* BreedImagesViewModel.swift in Sources */,
+				5B8DAA0F1FCE1C990003E4E8 /* BreedsListViewModel.swift in Sources */,
+				5BCDE8071FCE44BC00482412 /* BreedImageCell.swift in Sources */,
 				5B8DAA191FCE1E160003E4E8 /* BreedsRepository.swift in Sources */,
-				5B8DAA0D1FCE1C820003E4E8 /* BreedListController.swift in Sources */,
+				5B8DAA0D1FCE1C820003E4E8 /* BreedsListController.swift in Sources */,
 				5B8DAA171FCE1D3F0003E4E8 /* Breed.swift in Sources */,
 				5BED3EDE1FCE175F00E7CD17 /* AppDelegate.swift in Sources */,
 				5B8DAA1B1FCE213F0003E4E8 /* Constants.swift in Sources */,

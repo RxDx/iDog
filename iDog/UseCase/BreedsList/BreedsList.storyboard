@@ -31,7 +31,7 @@
         <!--Breed List-->
         <scene sceneID="ziT-1l-J4O">
             <objects>
-                <viewController id="aQS-xR-qPO" customClass="BreedListController" customModule="iDog" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="aQS-xR-qPO" customClass="BreedsListController" customModule="iDog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fPc-gE-Qea"/>
                         <viewControllerLayoutGuide type="bottom" id="Ka3-3k-Vk5"/>
@@ -94,7 +94,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="px2-Xw-3Of"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Breed List" id="PaV-7f-hnZ"/>
+                    <navigationItem key="navigationItem" title="Breed List" id="PaV-7f-hnZ">
+                        <barButtonItem key="backBarButtonItem" title=" " id="k3b-GM-y2O"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="eJf-Ed-HMw" id="xcq-Ye-jfY"/>
                     </connections>

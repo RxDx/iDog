@@ -1,5 +1,5 @@
 //
-//  BreedListViewModel.swift
+//  BreedsListViewModel.swift
 //  iDog
 //
 //  Created by Rodrigo Dumont on 28/11/17.
@@ -14,7 +14,7 @@ protocol BreedListViewModelDelegate {
     func updateUI()
 }
 
-class BreedListViewModel {
+class BreedsListViewModel {
 
     var breedsHash = [String: [Breed]]()
     var error: String? = nil

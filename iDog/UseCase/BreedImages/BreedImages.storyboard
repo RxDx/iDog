@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="zik-1O-8Sp">
+            <objects>
+                <navigationController id="DlP-ws-wGg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gFg-c0-Q7h">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="4Az-fO-p83" kind="relationship" relationship="rootViewController" id="onR-BI-bEB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KEH-Wi-10r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760" y="-28"/>
+        </scene>
+        <!--Images-->
+        <scene sceneID="Wi3-WB-eJ4">
+            <objects>
+                <viewController storyboardIdentifier="BreedImages" id="4Az-fO-p83" customClass="BreedImagesController" customModule="iDog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5xb-7i-ioz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8th-5U-hVk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kwG-dI-Vcq">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="16"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BreedImage" id="X6S-Wx-X3g" customClass="BreedImageCell" customModule="iDog" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="16" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8jb-VY-x0M">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <connections>
+                                            <outlet property="breedImageView" destination="8jb-VY-x0M" id="g8n-YN-tiu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Az-fO-p83" id="6Ye-6T-32E"/>
+                                    <outlet property="delegate" destination="4Az-fO-p83" id="SHc-s3-6W8"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8th-5U-hVk" firstAttribute="top" secondItem="5xb-7i-ioz" secondAttribute="top" id="BAu-vN-1Sa"/>
+                            <constraint firstItem="8th-5U-hVk" firstAttribute="leading" secondItem="Acq-Xk-evk" secondAttribute="leading" id="Krd-Zt-Kka"/>
+                            <constraint firstItem="8th-5U-hVk" firstAttribute="trailing" secondItem="Acq-Xk-evk" secondAttribute="trailing" id="LJl-EZ-OPB"/>
+                            <constraint firstItem="8th-5U-hVk" firstAttribute="bottom" secondItem="Acq-Xk-evk" secondAttribute="bottom" id="nej-o0-Zq6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Acq-Xk-evk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Images" id="YM1-2E-DPo">
+                        <barButtonItem key="backBarButtonItem" title=" " id="5KM-jr-JYA"/>
+                        <barButtonItem key="rightBarButtonItem" image="favorited" id="JCe-wW-fzC">
+                            <connections>
+                                <action selector="clickOnFavoriteButton:" destination="4Az-fO-p83" id="8WP-Kc-kdb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="8th-5U-hVk" id="qUK-KL-aU3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R65-OI-F4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="-28.335832083958024"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="favorited" width="20" height="20"/>
+    </resources>
+</document>
