@@ -49,6 +49,8 @@ class BreedImagesController: UIViewController {
 // MARK: - ViewModelDelegate
 extension BreedImagesController: BreedImagesViewModelDelegate {
     func updateUI() {
+        title = "\(viewModel?.breed?.name ?? "Imagess")"
+        
         favoriteButton.setBackgroundImage(UIImage(named:
             viewModel?.breed?.isFavorite == true ? "trash" : "star"),
                                           for: .normal, barMetrics: .default)

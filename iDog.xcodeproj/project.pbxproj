@@ -23,6 +23,7 @@
 		5BCDE8071FCE44BC00482412 /* BreedImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE8061FCE44BC00482412 /* BreedImageCell.swift */; };
 		5BCDE8091FCE44C900482412 /* BreedImagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE8081FCE44C900482412 /* BreedImagesController.swift */; };
 		5BCDE80B1FCE44E800482412 /* BreedImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE80A1FCE44E800482412 /* BreedImagesViewModel.swift */; };
+		5BCDE8161FCF7F0F00482412 /* iDogTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BCDE8151FCF7F0F00482412 /* iDogTabBarController.swift */; };
 		5BED3EDE1FCE175F00E7CD17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */; };
 		5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */; };
 		5BED3EE31FCE175F00E7CD17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BED3EE11FCE175F00E7CD17 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		5BCDE8061FCE44BC00482412 /* BreedImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImageCell.swift; sourceTree = "<group>"; };
 		5BCDE8081FCE44C900482412 /* BreedImagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImagesController.swift; sourceTree = "<group>"; };
 		5BCDE80A1FCE44E800482412 /* BreedImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedImagesViewModel.swift; sourceTree = "<group>"; };
+		5BCDE8151FCF7F0F00482412 /* iDogTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iDogTabBarController.swift; sourceTree = "<group>"; };
 		5BED3EDA1FCE175F00E7CD17 /* iDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BED3EDF1FCE175F00E7CD17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				5B8DAA041FCE1AEC0003E4E8 /* Extensions */,
 				5BED3EDD1FCE175F00E7CD17 /* AppDelegate.swift */,
 				5BAA8B371FCE19E90031CF5E /* BaseRepository.swift */,
+				5BCDE8151FCF7F0F00482412 /* iDogTabBarController.swift */,
 				5B8DAA1A1FCE213F0003E4E8 /* Constants.swift */,
 			);
 			path = Base;
@@ -342,6 +345,7 @@
 				5BAA8B381FCE19E90031CF5E /* BaseRepository.swift in Sources */,
 				5BED3EE01FCE175F00E7CD17 /* ViewController.swift in Sources */,
 				5BCDE80B1FCE44E800482412 /* BreedImagesViewModel.swift in Sources */,
+				5BCDE8161FCF7F0F00482412 /* iDogTabBarController.swift in Sources */,
 				5B8DAA0F1FCE1C990003E4E8 /* BreedsListViewModel.swift in Sources */,
 				5BCDE8071FCE44BC00482412 /* BreedImageCell.swift in Sources */,
 				5B8DAA191FCE1E160003E4E8 /* BreedsRepository.swift in Sources */,

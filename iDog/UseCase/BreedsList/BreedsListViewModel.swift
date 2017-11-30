@@ -19,15 +19,23 @@ class BreedsListViewModel {
     var breedsHash = [String: [Breed]]()
     var error: String? = nil
     var delegate: BreedListViewModelDelegate?
+    var favoriteFilter = false
     
-    init(delegate: BreedListViewModelDelegate? = nil) {
+    init(delegate: BreedListViewModelDelegate? = nil, favoriteFilter: Bool = false) {
         self.delegate = delegate
+        self.favoriteFilter = favoriteFilter
     }
     
     // MARK: - Repository
     func getBreeds() {
         self.breedsHash = [String: [Breed]]()
         delegate?.updateUI()
+
+        if favoriteFilter {
+            getFavoriteBreeds()
+            return
+        }
+        
         delegate?.showLoading()
         BreedsRepository().all { (response) in
             self.delegate?.hideLoading()
@@ -42,6 +50,14 @@ class BreedsListViewModel {
             
             self.delegate?.updateUI()
         }
+    }
+    
+    func getFavoriteBreeds() {
+        let breeds = UserDefaults.standard.array(forKey: "favorites") as? [String]
+        self.breedsHash = self.sortBreeds(breeds?.map({ (name) -> Breed in
+            Breed(name: name)
+        }))
+        delegate?.updateUI()
     }
     
     // MARK: - Methods

@@ -21,7 +21,6 @@ class BreedsListController: UIViewController {
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(refreshControlValueChanged), for: .valueChanged)
         
-        viewModel = BreedsListViewModel(delegate: self)
         viewModel?.getBreeds()
     }
     
@@ -43,9 +42,12 @@ class BreedsListController: UIViewController {
     }
     
     // MARK: - Storyboard
-    static func storyboardInstance() -> UINavigationController? {
+    static func storyboardInstance(favoriteFilter: Bool = false) -> UINavigationController? {
         let storyboard = UIStoryboard(name: "BreedsList", bundle: nil)
-        return storyboard.instantiateInitialViewController() as? UINavigationController
+        let navController = storyboard.instantiateInitialViewController() as? UINavigationController
+        let controller = navController?.topViewController as? BreedsListController
+        controller?.viewModel = BreedsListViewModel(delegate: controller, favoriteFilter: favoriteFilter)
+        return navController
     }
 
 }
@@ -86,7 +88,10 @@ extension BreedsListController: UITableViewDataSource {
 //    }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return Array(viewModel!.breedsHash.keys).sorted().map{"\($0)"}
+        guard let keys = viewModel?.breedsHash.keys else {
+            return nil
+        }
+        return Array(keys).sorted().map{"\($0)"}
     }
 }
 
